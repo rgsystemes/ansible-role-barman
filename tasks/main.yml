@@ -1,5 +1,9 @@
 ---
-# tasks file for ansible-role-barman
+- include_vars: "{{ item }}"
+  with_first_found:
+    - "../vars/{{ ansible_distribution_release }}.yml"
+    - "../vars/default.yml"
+  tags: [always]
 
 - include: install.yml
   tags: [barman, barman-install]
