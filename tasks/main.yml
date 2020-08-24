@@ -6,11 +6,11 @@
     - "../vars/default.yml"
   tags: [always]
 
-- include: install.yml
+- import_tasks: _install.yml
   tags: [barman, barman-install]
 
-- include: configure.yml
+- import_tasks: _configure.yml
   tags: [barman, barman-configure]
 
-- include: cron.yml
+- import_tasks: _cron.yml
   tags: [barman, barman-cron]
