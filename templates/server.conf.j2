@@ -23,7 +23,7 @@ conninfo = "host={{ item.host}} user={{ item.backup_user }} dbname={{ item.syste
 ; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; To be used by pg_basebackup for backup and pg_receivexlog for WAL streaming
 ; NOTE: streaming_barman is a regular user with REPLICATION privilege
-streaming_conninfo = "host={{ item.host}} user={{ item.streaming_user }} dbname={{ item.systemdbname}}
+streaming_conninfo = "host={{ item.host}} user={{ item.streaming_user }} dbname={{ item.systemdbname}}"
 {%- endif %}
 
 
