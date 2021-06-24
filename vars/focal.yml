@@ -1,0 +1,13 @@
+---
+barman_apt_packages:
+  - rsync
+  - python3
+  - python3-pip
+  - python3-psycopg2
+  - python3-pycurl
+  - python3-dateutil
+  - python3-setuptools
+
+barman_pip_packages:
+  - argcomplete
+  - argh
